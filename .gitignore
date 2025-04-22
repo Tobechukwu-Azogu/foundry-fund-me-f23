@@ -15,6 +15,7 @@ docs/
 .env
 
 /lib
-
+- lib/
++ !lib/chainlink-brownie-contracts/
 
 .keystore
