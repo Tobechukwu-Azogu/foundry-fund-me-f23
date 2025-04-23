@@ -14,8 +14,6 @@ docs/
 # Dotenv file
 .env
 
-/lib
-- lib/
-+ !lib/chainlink-brownie-contracts/
+
 
 .keystore
