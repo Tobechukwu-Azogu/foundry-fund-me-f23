@@ -41,3 +41,14 @@ jobs:
         run: |
           forge test -vvv
         id: test
+
+        - name: Checkout Repository
+  uses: actions/checkout@v4
+  # Remove or comment out: with: submodules: recursive
+- name: Install Foundry
+  uses: foundry-rs/foundry-toolchain@v1
+- name: Build
+  run: forge build --sizes
+
+- name: Install Dependencies (optional)
+  run: forge install
